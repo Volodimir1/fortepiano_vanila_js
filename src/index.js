@@ -3,21 +3,22 @@
 // <h1>Hello Vanilla!</h1>
 //mousedown / mouseup
 
-// function play(event) {
-//   console.log(event.type + "; " + event.currentTarget);
-// };
-// function stop(event) {
-//   console.log(event.type);
-// };
-// keyboard.addEventListener("mousedown", play);
-// keyboard.addEventListener("mouseup", stop);
+function play(e) {
+  e.target.classList.toggle('list__key--pressed');
+  console.log(e.type + "; " + e.currentTarget + "; " + e.target.innerHTML + "; " + e.target.classList);
+};
+function stop(e) {
+  e.target.classList.toggle('list__key--pressed');
+  console.log(e.type + "; " + e.currentTarget + "; " + e.target.innerHTML + "; " + e.target.classList);
+};
 
 var $ul = document.querySelector('ul');
-
-$ul.addEventListener('click', function(e) {
-   if (e.target.tagName === 'LI') {
-      e.target.classList.toggle('done');
-      console.log(e.target.classList);
-      console.log(e.target.innerHTML);
-   }
+// MOBIL TOUCH
+$ul.addEventListener('touchstart', function(e) {
+  event.preventDefault();
+  if (e.target.tagName === 'LI') play(e);
+});
+$ul.addEventListener('touchend', function(e) {
+  event.preventDefault();
+  if (e.target.tagName === 'LI') stop(e);
 });
