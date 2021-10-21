@@ -1,16 +1,17 @@
 'use strict'
-// document.getElementById("app").innerHTML = `
-// <h1>Hello Vanilla!</h1>
-//mousedown / mouseup
 
 function play(e) {
   e.target.classList.toggle('list__key--pressed');
-  console.log(e.type + "; " + e.currentTarget + "; " + e.target.innerHTML + "; " + e.target.classList);
+  sound(e.target.innerHTML);
 };
 function stop(e) {
   e.target.classList.toggle('list__key--pressed');
-  console.log(e.type + "; " + e.currentTarget + "; " + e.target.innerHTML + "; " + e.target.classList);
 };
+function sound(note) {
+   var audio = new Audio();
+   audio.src = `sound/${note}2.mp3`;
+   audio.autoplay = true;
+ }
 
 var $ul = document.querySelector('ul');
 // MOBIL TOUCH
