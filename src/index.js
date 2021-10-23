@@ -15,13 +15,13 @@ function stop(e) {
 //  };
 
 var $ul = document.querySelector('ul');
-var audio = new Audio();
+// var audio = new Audio(); //single sound(
 // MOBIL TOUCH
 $ul.addEventListener('touchstart', function(e) {
   event.preventDefault();
   if (e.target.tagName === 'LI') {
      play(e);
-   //   var audio = new Audio();
+     var audio = new Audio();
      audio.currentTime = 0;
      audio.src = `sound/${e.target.innerHTML}2.mp3`;
      audio.autoplay = true;
@@ -29,6 +29,8 @@ $ul.addEventListener('touchstart', function(e) {
 });
 $ul.addEventListener('touchend', function(e) {
   event.preventDefault();
-  if (e.target.tagName === 'LI') stop(e);
+  if (e.target.tagName === 'LI') {
+     stop(e);
+   //   audio.paused ? audio.play() : audio.pause(); //single sound(
+  }
 });
-// audio.paused ? audio.play() : audio.pause();
