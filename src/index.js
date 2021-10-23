@@ -15,6 +15,7 @@ function stop(e) {
 //  };
 
 var $ul = document.querySelector('ul');
+// var audio = new Audio(); //single sound(
 // MOBIL TOUCH
 $ul.addEventListener('touchstart', function(e) {
   event.preventDefault();
@@ -28,5 +29,8 @@ $ul.addEventListener('touchstart', function(e) {
 });
 $ul.addEventListener('touchend', function(e) {
   event.preventDefault();
-  if (e.target.tagName === 'LI') stop(e);
+  if (e.target.tagName === 'LI') {
+     stop(e);
+   //   audio.paused ? audio.play() : audio.pause(); //single sound(
+  }
 });
