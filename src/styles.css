@@ -29,7 +29,6 @@
     border-radius: 0 0 4px 4px;
 /*    border: 1px solid black;*/
     text-align: center;
-    padding-top: 95px;
     box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.5);
  }
 .list__key--pressed {
