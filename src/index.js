@@ -23,7 +23,7 @@ $ul.addEventListener('touchstart', function(e) {
      play(e);
      var audio = new Audio();
      audio.currentTime = 0;
-     audio.src = `sound/${e.target.innerHTML}4.mid`;
+     audio.src = `sound/${e.target.innerHTML}.mp3`;
      audio.autoplay = true;
   }
 });
