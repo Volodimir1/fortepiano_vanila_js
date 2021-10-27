@@ -19,7 +19,7 @@
    color: #252525;
    text-align: center;
  }
- .header h1 {
+ .header__title {
     font-size: 1.5rem;
  }
  .container__list {
