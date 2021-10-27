@@ -1,11 +1,11 @@
 'use strict'
 
 function play(e) {
-  e.target.classList.toggle('list__key--pressed');
+  e.target.classList.toggle('list__key_pressed');
 //   sound(e.target.innerHTML);
 };
 function stop(e) {
-  e.target.classList.toggle('list__key--pressed');
+  e.target.classList.toggle('list__key_pressed');
 };
 // function sound(note) {
 //    var audio = new Audio();
