@@ -1,11 +1,13 @@
 :root {
   --black-height: 65%; /* ?? */
 }
+
 * {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
  }
+
  .container {
    height: 100vh;
    display: flex;
@@ -44,9 +46,9 @@
     background-color: white;
     border-radius: 0 0 4px 4px;
 /*    border: 1px solid black;*/
-    overflow: hidden;
+/*    overflow: hidden;
     text-align: center;
-    text-overflow: clip;
+    text-overflow: clip;*/
     box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.5);
  }
  .list__key_black {
@@ -76,3 +78,19 @@
    align-items: center;
    font-size: 0.8rem;
  }
+@media screen and (orientation: portrait) {
+    html {
+      transform: rotate(90deg);
+      transform-origin: right top;
+      width: 100vh;
+      /*height: 100vw;*/
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      
+    }
+    .container {
+      height: 100vw;
+    }
+  }
