@@ -60,7 +60,7 @@
    margin: 0 calc(-1/40*100%);
    border-radius: 0 0 3px 3px;
    z-index: 1;
-   box-shadow: none;
+/*   box-shadow: none;*/
    box-shadow: inset 1px 0 5px rgba(255, 255, 255, 0.5);
  }
 .list__key_pressed {
