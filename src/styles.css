@@ -3,13 +3,11 @@
   --gray: #686868;
   --dark-gray: #252525;
 }
-
 * {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
  }
-
  .container {
    height: 100vh;
    display: flex;
@@ -43,7 +41,6 @@
     /*cursor: pointer;*/
  }
  .list__key {
-    
     
 /*    transition: all 0.02s ease-out;*/
  }
