@@ -1,11 +1,12 @@
 'use strict'
 
-function play(e) {
-  e.target.classList.toggle('list__key_pressed');
+function press(e) {
+  e.target.classList.toggle(e.target.classList + '_pressed');
 //   sound(e.target.innerHTML);
 };
-function stop(e) {
-  e.target.classList.toggle('list__key_pressed');
+function unpress(e) {
+//  e.target.classList.toggle(/.+pressed/);
+  e.target.classList.remove('list__key_white_pressed', 'list__key_black_pressed');
 };
 // function sound(note) {
 //    var audio = new Audio();
@@ -20,7 +21,7 @@ var $ul = document.querySelector('ul');
 $ul.addEventListener('touchstart', function(e) {
   event.preventDefault();
   if (e.target.tagName === 'LI') {
-     play(e);
+     press(e);
      var audio = new Audio();
      audio.currentTime = 0;
      audio.src = `sound/${e.target.innerHTML}.mp3`;
@@ -28,9 +29,9 @@ $ul.addEventListener('touchstart', function(e) {
   }
 });
 $ul.addEventListener('touchend', function(e) {
-  event.preventDefault();
+  event.preventDefault(); //?
   if (e.target.tagName === 'LI') {
-     stop(e);
+     unpress(e);
    //   audio.paused ? audio.play() : audio.pause(); //single sound(
   }
 });
