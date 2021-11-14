@@ -29,7 +29,7 @@ $ul.addEventListener('touchstart', function(e) {
   }
 });
 $ul.addEventListener('touchend', function(e) {
-  event.preventDefault(); //?
+  // event.preventDefault(); //?
   if (e.target.tagName === 'LI') {
      unpress(e);
    //   audio.paused ? audio.play() : audio.pause(); //single sound(
