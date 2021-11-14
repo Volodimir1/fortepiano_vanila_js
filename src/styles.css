@@ -13,8 +13,6 @@
    display: flex;
    flex-direction: column;
    font-family: 'Times New Roman', Times, serif;
-   /* font-size: 1rem; */
-   /*align-items: stretch;*/
  }
  .container__header {
    flex-grow: 1;
@@ -35,13 +33,11 @@
 }
  .list {
     background-color: black;
-/*    background-color: gray; /*dev*/
     padding: 1% 5% 3%;
     list-style: none;
     display: flex;
     font-size: 0;
     color: #686868;
-    /*cursor: pointer;*//*For desktop*/
  }
  .list__key_white {
    width: calc(1/14*100%);
@@ -81,7 +77,6 @@
       transform: rotate(90deg);
       transform-origin: right top;
       width: 100vh;
-      /*height: 100vw;*/
       overflow-x: hidden;
       position: absolute;
       top: 100%;
