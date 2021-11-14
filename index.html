@@ -4,20 +4,51 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Touch Fortepiano</title>
+      <title>Mobile Touch Fortepiano</title>
+      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+      <link rel="manifest" href="/site.webmanifest">
+      <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+      <meta name="msapplication-TileColor" content="#2b5797">
+      <meta name="theme-color" content="#ffffff">
       <link rel="stylesheet" href="src/styles.css" />
    </head>
-   <body>
-      <ul id='keyboard' class="list">
-         <li class="list__key">c</li>
-         <li class="list__key">d</li>
-         <li class="list__key">e</li>
-         <li class="list__key">f</li>
-         <li class="list__key">g</li>
-         <li class="list__key">a</li>
-         <li class="list__key">b</li>
-         <li class="list__key">c2</li>
+   <body class="container">
+      <header class="container__header header">
+         <h1 class="header__title">Mobile Touch Fortepiano</h1>
+         <p class="header__text">Hi!</p>
+         <p class="header__text">Tuch the keys like Mozart;)</p>
+      </header>
+      <ul id='keyboard' class="container__list list">
+         <li class="list__key_white">c</li>
+         <li class="list__key_black">c-sharp</li>
+         <li class="list__key_white">d</li>
+         <li class="list__key_black">d-sharp</li>
+         <li class="list__key_white">e</li>
+         <li class="list__key_white">f</li>
+         <li class="list__key_black">f-sharp</li>
+         <li class="list__key_white">g</li>
+         <li class="list__key_black">g-sharp</li>
+         <li class="list__key_white">a</li>
+         <li class="list__key_black">a-sharp</li>
+         <li class="list__key_white">b</li>
+         <li class="list__key_white">c1</li>
+         <li class="list__key_black">c1-sharp</li>
+         <li class="list__key_white">d1</li>
+         <li class="list__key_black">d1-sharp</li>
+         <li class="list__key_white">e1</li>
+         <li class="list__key_white">f1</li>
+         <li class="list__key_black">f1-sharp</li>
+         <li class="list__key_white">g1</li>
+         <li class="list__key_black">g1-sharp</li>
+         <li class="list__key_white">a1</li>
+         <li class="list__key_black">a1-sharp</li>
+         <li class="list__key_white">b1</li>
       </ul>
-   <script src="src/index.js"></script>
+      <footer class="container__footer footer">
+         <p>© 1758-2021 Vladimir N</p>
+      </footer>
+  <script src="src/index.js"></script>
 </body>
 </html>
