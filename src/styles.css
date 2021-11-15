@@ -39,13 +39,13 @@
     font-size: 0;
     color: #686868;
  }
- .list__key_white {
+ .list__key--white {
    width: calc(1/14*100%);
    background-color: white;
    border-radius: 0 0 4px 4px;
    box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.5);
  }
- .list__key_black {
+ .list__key--black {
    width: calc(1/20*100%);
    background-color: black;
    height: var(--black-height);
@@ -54,13 +54,13 @@
    z-index: 1;
    box-shadow: inset 1px 0 5px rgba(255, 255, 255, 0.5);
  }
- .list__key_white_pressed {
+ .list__key--white--pressed {
   background-color: whitesmoke;
   height: 99.5%;
   border-radius: 0 0 4px 4px;
   box-shadow: inset 1px 0 5px rgba(0, 0, 0, 0.5), inset -1px 0 2px rgba(0, 0, 0, 0.5);
 }
- .list__key_black_pressed {
+ .list__key--black--pressed {
    height: calc(var(--black-height)*0.99);
  }
 .footer {

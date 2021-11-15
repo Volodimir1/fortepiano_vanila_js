@@ -1,10 +1,10 @@
 'use strict'
 
 function press(e) {
-  e.target.classList.toggle(e.target.classList + '_pressed');
+  e.target.classList.toggle(e.target.classList + '--pressed');
 };
 function unpress(e) {
-  e.target.classList.remove('list__key_white_pressed', 'list__key_black_pressed');
+  e.target.classList.remove('list__key--white--pressed', 'list__key--black--pressed');
 };
 
 var $ul = document.querySelector('ul');
